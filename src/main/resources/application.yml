@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: @project.profile@
+server:
+  port: 8088
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs
+

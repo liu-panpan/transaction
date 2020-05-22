@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: false
+  datasource:
+    platform: h2
+    url: jdbc:h2:~/trade;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
+    username: sa
+    password: sa
+    initialization-mode: always
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
